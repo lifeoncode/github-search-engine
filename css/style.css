@@ -66,5 +66,56 @@ main {
 
 .profile {
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px auto;
+    width: 50%;
+    background-color: rgb(130, 180, 255);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+}
+
+.profile .image {
+    align-self: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.profile .image img {
+    width: 100%;
+}
+
+.profile .text {
+    padding: 20px;
+}
+
+.profile .text span {
+    display: block;
+}
+
+.profile .text .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.stats .followers {
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.stats .following {
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.stats .number {
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.username, .name,
+.email, .bio {
+    margin-bottom: 10px;
 }

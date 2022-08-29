@@ -10,6 +10,25 @@ searchInput.addEventListener('keyup', (e) => {
     // make a request if the search box is not empty
     if (searchText !== '') {
         github.getUser(searchText)
-        .then(data => console.log(data));
+        .then(data => {
+            // check response message before acting
+            if (data.profile.message === 'Not Found') {
+                console.log('user not found...');
+            } else {
+                
+                console.log(data.profile)
+                // const output = `
+                // <div class="image">
+                //     <img src="${}" alt="profile avatar"
+                // </div>
+                // `; 
+                
+
+            }
+        });
+
+    } else {
+        // clear UI
+        console.log('clear')
     }
 });

@@ -31,7 +31,7 @@ main {
 }
 
 .form {
-    width: 50%;
+    width: 60%;
     border-radius: 5px;
     background-color: #f6f6f6;
     padding: 20px;
@@ -40,11 +40,13 @@ main {
 
 .form h1 {
     font-weight: 400;
+    color: rgb(2,0,36);
 }
 
 .form p {
     font-size: 18px;
     margin: 10px 0 30px 0;
+    color: rgb(2,0,36);
 }
 
 .form input {
@@ -65,17 +67,16 @@ main {
 }
 
 .profile {
-    padding: 20px;
+    padding: 10px;
     margin: 20px auto;
-    width: 50%;
-    background-color: rgb(130, 180, 255);
+    width: 60%;
+    background-color: rgb(0, 37, 132);
     border-radius: 10px;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
 }
 
 .profile .image {
-    align-self: center;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -86,6 +87,8 @@ main {
 
 .profile .text {
     padding: 20px;
+    color: #f1f1f1;
+    align-self: center;
 }
 
 .profile .text span {
@@ -96,18 +99,19 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-top: 30px;
 }
 
 .stats .followers {
-    background-color: red;
-    border-radius: 5px;
-    padding: 5px;
+    background-color: rgb(4, 15, 45);
+    border-radius: 3px;
+    padding: 10px;
 }
 
 .stats .following {
-    background-color: green;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 10px;
+    background-color: rgb(10, 22, 52);
 }
 
 .stats .number {

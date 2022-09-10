@@ -89,6 +89,7 @@ main {
     padding: 20px;
     color: #f1f1f1;
     align-self: center;
+    text-align: left;
 }
 
 .profile .text span {
